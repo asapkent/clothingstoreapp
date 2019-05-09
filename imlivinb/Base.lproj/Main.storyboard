@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imlivinb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="YWa-ym-eiS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imlivinb2" translatesAutoresizingMaskIntoConstraints="NO" id="ycC-MB-urs">
+                                <rect key="frame" x="0.0" y="553" width="375" height="114"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ycC-MB-urs" secondAttribute="height" multiplier="125:38" id="1kg-WR-gLR"/>
+                                    <constraint firstAttribute="height" constant="114" id="y40-rq-zKL"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Pt-be-XJm" userLabel="Buttons View">
+                                <rect key="frame" x="75" y="183" width="240" height="123"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXm-jt-tBu">
+                                        <rect key="frame" x="51" y="-2" width="122" height="40"/>
+                                        <color key="backgroundColor" red="0.55676333109537768" green="0.55676333109537768" blue="0.55676333109537768" alpha="0.61774935787671237" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="vYl-fk-SXi"/>
+                                        </constraints>
+                                        <state key="normal" title="   GRAM" image="icons8-instagram-40">
+                                            <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="instaGramButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OBp-ef-rcA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGf-s3-2N1">
+                                        <rect key="frame" x="51" y="54" width="122" height="45"/>
+                                        <color key="backgroundColor" red="0.55676333109537768" green="0.55676333109537768" blue="0.55676333109537768" alpha="0.67802868150684936" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="3rR-mK-uTT"/>
+                                        </constraints>
+                                        <state key="normal" title="  LOCATON" image="icons8-location-30">
+                                            <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alO-AQ-2We"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcn-bV-VlA">
+                                        <rect key="frame" x="51" y="-51" width="122" height="32"/>
+                                        <color key="backgroundColor" red="0.64136082461085087" green="0.64771093178521566" blue="0.64771093178521566" alpha="0.63653146404109584" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="  SHOP" image="icons8-price-tag-40">
+                                            <color key="titleColor" red="0.66041402284263961" green="0.074635175309292062" blue="0.12741243183399173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shopButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAm-tX-DDf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tXm-jt-tBu" secondAttribute="trailing" id="3op-qi-iaD"/>
+                                    <constraint firstItem="mGf-s3-2N1" firstAttribute="top" secondItem="tXm-jt-tBu" secondAttribute="bottom" constant="16" id="6Px-Y6-H03"/>
+                                    <constraint firstAttribute="bottom" secondItem="mGf-s3-2N1" secondAttribute="bottom" constant="24" id="M85-MO-oRk"/>
+                                    <constraint firstItem="Gcn-bV-VlA" firstAttribute="leading" secondItem="tXm-jt-tBu" secondAttribute="leading" id="azY-oq-2bm"/>
+                                    <constraint firstItem="tXm-jt-tBu" firstAttribute="top" secondItem="Gcn-bV-VlA" secondAttribute="bottom" constant="17" id="gnU-uR-bp2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gcn-bV-VlA" secondAttribute="trailing" constant="67" id="lPh-yg-0HR"/>
+                                    <constraint firstItem="Gcn-bV-VlA" firstAttribute="trailing" secondItem="mGf-s3-2N1" secondAttribute="trailing" id="ltL-t3-A1i"/>
+                                    <constraint firstItem="tXm-jt-tBu" firstAttribute="leading" secondItem="5Pt-be-XJm" secondAttribute="leading" constant="51" id="mRq-zg-6hS"/>
+                                    <constraint firstItem="Gcn-bV-VlA" firstAttribute="trailing" secondItem="tXm-jt-tBu" secondAttribute="trailing" id="oVR-Pk-EZv"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mGf-s3-2N1" secondAttribute="trailing" id="plX-Zg-dhf"/>
+                                    <constraint firstItem="Gcn-bV-VlA" firstAttribute="leading" secondItem="mGf-s3-2N1" secondAttribute="leading" id="poQ-ih-DVU"/>
+                                    <constraint firstItem="mGf-s3-2N1" firstAttribute="leading" secondItem="5Pt-be-XJm" secondAttribute="leading" constant="51" id="tqr-J5-Nt2"/>
+                                    <constraint firstItem="Gcn-bV-VlA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Pt-be-XJm" secondAttribute="leading" id="za4-Hc-xr3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YWa-ym-eiS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0P2-oS-6uQ"/>
+                            <constraint firstItem="5Pt-be-XJm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="40M-yr-0vu"/>
+                            <constraint firstItem="YWa-ym-eiS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7et-D6-CJJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Pt-be-XJm" secondAttribute="trailing" constant="60" id="BeI-ix-D62"/>
+                            <constraint firstItem="ycC-MB-urs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EIl-ER-iSa"/>
+                            <constraint firstItem="YWa-ym-eiS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ENq-Lj-nmJ"/>
+                            <constraint firstItem="ycC-MB-urs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="K2K-j9-Olr"/>
+                            <constraint firstItem="5Pt-be-XJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="QVn-Bi-vgR"/>
+                            <constraint firstItem="ycC-MB-urs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kQh-Nb-50G"/>
+                            <constraint firstItem="ycC-MB-urs" firstAttribute="top" secondItem="5Pt-be-XJm" secondAttribute="bottom" constant="247" id="n8T-P4-8ux"/>
+                            <constraint firstItem="YWa-ym-eiS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sci-Ea-Oh4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gramButton" destination="tXm-jt-tBu" id="exC-Ii-1oX"/>
+                        <outlet property="locationButton" destination="mGf-s3-2N1" id="tJU-1a-oN1"/>
+                        <outlet property="shopButton" destination="Gcn-bV-VlA" id="WHV-zr-hWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.52709359605913"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cup" width="1600" height="1066"/>
+        <image name="icons8-instagram-40" width="32" height="32"/>
+        <image name="icons8-location-30" width="24" height="24"/>
+        <image name="icons8-price-tag-40" width="32" height="32"/>
+        <image name="imlivinb2" width="1198" height="561"/>
+    </resources>
+</document>
